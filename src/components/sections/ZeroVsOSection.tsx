@@ -61,10 +61,9 @@ export default function ZeroVsOSection() {
 
       <Reveal>
         <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-3 text-balance">
-          Analyzing failures revealed a surprisingly simple problem
-        </h2>
+85% wasn't enough.        </h2>
         <p className="text-lg text-slate-500 max-w-2xl mb-10">
-          85% wasn't enough. I examined every failure case — and found a very
+           I examined every failure case — and found a very
           specific, very human pattern.
         </p>
       </Reveal>
@@ -82,16 +81,13 @@ export default function ZeroVsOSection() {
                   Failure Pattern Identified
                 </h4>
                 <p className="text-slate-600 mt-2 leading-relaxed">
-                  The AI was confusing the digit{" "}
                   <code className="bg-slate-100 text-slate-800 px-1.5 py-0.5 rounded font-bold">
                     0
-                  </code>{" "}
-                  (zero) with the letter{" "}
+                  </code> vs. {" "}
                   <code className="bg-slate-100 text-slate-800 px-1.5 py-0.5 rounded font-bold">
                     O
                   </code>{" "}
-                  — and vice versa. In the small printed font on the barcode
-                  label, these two characters looked nearly identical.
+                 
                 </p>
               </div>
             </div>
@@ -106,14 +102,13 @@ export default function ZeroVsOSection() {
             <div className="relative">
               <div className="absolute -left-[25px] w-3.5 h-3.5 rounded-full bg-amber-400 border-4 border-slate-50" />
               <p className="text-lg italic text-slate-600 font-light">
-                "So I went back to the warehouse — again."
+                I went back to the warehouse — again.
               </p>
             </div>
             <div className="relative">
               <div className="absolute -left-[25px] w-3.5 h-3.5 rounded-full bg-amber-300 border-4 border-slate-50" />
               <p className="text-slate-500 leading-relaxed">
-                I found the colleague responsible for configuring the label
-                printer and asked:{" "}
+                {" "}
                 <strong className="text-slate-700">
                   "Can we print the purchasing order number in a larger font,
                   and make it bold?"

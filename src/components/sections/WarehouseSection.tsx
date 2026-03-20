@@ -104,12 +104,13 @@ function DeliveryNoteWithLabel() {
 
 /* ---------- Timeline Narrative ---------- */
 const narrative = [
+
   {
-    color: "bg-indigo-500",
+    color: "bg-indigo-400",
     ring: false,
     text: (
-      <p className="text-lg italic text-slate-300 font-light">
-        "I didn't stay at my desk. I went to the warehouse."
+      <p className="text-slate-400 leading-relaxed">
+        I went to the warehouse.
       </p>
     ),
   },
@@ -118,9 +119,7 @@ const narrative = [
     ring: false,
     text: (
       <p className="text-slate-400 leading-relaxed">
-        I walked into the receiving area and spent time watching how the
-        warehouse operators actually handle incoming packages — unpacking boxes,
-        sorting delivery notes, processing goods receipts.
+        I walked into the receiving area.
       </p>
     ),
   },
@@ -129,11 +128,9 @@ const narrative = [
     ring: true,
     text: (
       <p className="text-slate-200 leading-relaxed font-medium">
-        And then I noticed something. Every time a package arrived, a warehouse
-        colleague would print a{" "}
-        <strong className="text-indigo-300">barcode label</strong> and stick it
-        onto the delivery note. On that label was the{" "}
-        <strong className="text-indigo-300">purchasing order number</strong>.
+        I saw our warehouse colleague attach a {" "}
+        <strong className="text-indigo-300">barcode label</strong> on {" "}
+        <strong className="text-indigo-300">delivery note</strong>.
       </p>
     ),
   },
@@ -162,7 +159,7 @@ const pipeline = [
   },
   {
     emoji: "🧠",
-    title: "AI matches with context",
+    title: "AI find Chemical ID with context",
     desc: "With the material number list as context, AI only needs to match each one to its CAS ID.",
   },
 ];
@@ -175,11 +172,10 @@ export default function WarehouseSection() {
 
       <Reveal>
         <h2 className="text-3xl md:text-4xl font-black text-white mb-3 text-balance">
-          Walking the Warehouse Floor
+          Answer in the Warehouse Floor
         </h2>
         <p className="text-lg text-indigo-300/60 max-w-2xl mb-14">
-          The breakthrough didn't come from tuning models. It came from leaving
-          my desk.
+          
         </p>
       </Reveal>
 

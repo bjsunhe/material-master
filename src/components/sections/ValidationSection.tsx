@@ -87,11 +87,10 @@ export default function ValidationSection() {
 
       <Reveal>
         <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-3 text-balance">
-          SAP isn't just a data source — it's a validation layer
+          Push the PO accuracy to 100%
         </h2>
         <p className="text-lg text-slate-500 max-w-2xl mb-10">
-          The users were satisfied with 94%, but I wasn't done. Could I push the
-          PO number recognition to 100%?
+          The users were satisfied with 99%, but I wasn't done. 
         </p>
       </Reveal>
 
@@ -107,11 +106,11 @@ export default function ValidationSection() {
                   The Realization
                 </h4>
                 <p className="text-slate-600 mt-2 leading-relaxed">
-                  I was already querying SAP to retrieve material number lists.
-                  But SAP could do more than return data —{" "}
-                  <strong>it could validate data.</strong>
+          SAP isn't just a data source — it's a 
+                 
+                  <strong>validation layer.</strong>
                 </p>
-                <p className="text-slate-500 mt-3 leading-relaxed text-sm">
+                {/* <p className="text-slate-500 mt-3 leading-relaxed text-sm">
                   If the AI reads{" "}
                   <code className="bg-red-50 text-red-600 px-1.5 py-0.5 rounded">
                     4500012O45
@@ -121,7 +120,7 @@ export default function ValidationSection() {
                     4500012045
                   </code>
                   , SAP returns an error. The PO number simply won't exist.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

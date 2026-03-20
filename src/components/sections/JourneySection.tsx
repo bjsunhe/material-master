@@ -124,7 +124,7 @@ export default function JourneySection() {
           <StageCard key={i} stage={stage} index={i} />
         ))}
       </div>
-
+{/* 
       <Reveal className="mt-16">
         <h3 className="text-xl font-bold text-white mb-2 text-center">
           Final Architecture
@@ -133,7 +133,7 @@ export default function JourneySection() {
           The complete pipeline from input to validated output
         </p>
         <FlowDiagram />
-      </Reveal>
+      </Reveal> */}
     </Section>
   );
 }

@@ -105,17 +105,7 @@ export default function ChallengeSection() {
     <Section id="challenge" className="bg-slate-50">
       <SectionLabel number="01" emoji="😤" text="The Challenge" />
 
-      <Reveal>
-        <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-3 text-balance">
-          A straightforward task that turned out to be anything but simple
-        </h2>
-        <p className="text-lg text-slate-500 max-w-2xl mb-12">
-          Extract the association between{" "}
-          <strong className="text-indigo-600">material numbers</strong> and{" "}
-          <strong className="text-indigo-600">CAS IDs</strong> (hazardous
-          chemical substance identifiers) from delivery note PDFs.
-        </p>
-      </Reveal>
+
 
       <div className="grid lg:grid-cols-2 gap-12 items-start">
         {/* Left: explanation */}
@@ -142,35 +132,12 @@ export default function ChallengeSection() {
             <Callout type="warning">
               <p className="font-bold text-lg mb-1">Result: 60% Accuracy</p>
               <p className="text-sm">
-                The AI kept <strong>hallucinating</strong> — grabbing order
-                numbers, delivery numbers, and customer references, mistaking
-                them for material numbers. A delivery note has{" "}
-                <strong>too many similar-looking number fields</strong> for the
-                AI to distinguish without context.
+                
               </p>
             </Callout>
           </Reveal>
 
-          <Reveal delay={0.3}>
-            <div className="flex items-center gap-3 text-sm text-slate-500 bg-white rounded-xl p-4 border border-slate-200">
-              <span className="text-2xl">🤖</span>
-              <p>
-                Without context, the model simply couldn't tell a{" "}
-                <code className="bg-indigo-50 text-indigo-600 px-1.5 py-0.5 rounded text-xs">
-                  material number
-                </code>{" "}
-                from an{" "}
-                <code className="bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded text-xs">
-                  order number
-                </code>{" "}
-                or{" "}
-                <code className="bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded text-xs">
-                  delivery number
-                </code>
-                .
-              </p>
-            </div>
-          </Reveal>
+          
         </div>
 
         {/* Right: delivery note mock */}
