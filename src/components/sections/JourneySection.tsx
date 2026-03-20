@@ -58,50 +58,6 @@ function StageCard({
   );
 }
 
-/* ---------- Flow Diagram ---------- */
-const flowSteps = [
-  { emoji: "📄", label: "PDF Input", sub: "Delivery note" },
-  { emoji: "🤖", label: "AI reads label", sub: "PO number" },
-  { emoji: "🗄️", label: "SAP Query", sub: "Material list" },
-  { emoji: "🧠", label: "AI matches", sub: "Mat → CAS" },
-  { emoji: "🛡️", label: "SAP Validates", sub: "Error check" },
-  { emoji: "📊", label: "Output", sub: "95% accurate" },
-];
-
-function FlowDiagram() {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-50px" });
-
-  return (
-    <div
-      ref={ref}
-      className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 my-10"
-    >
-      {flowSteps.map((step, i) => (
-        <motion.div
-          key={i}
-          initial={{ opacity: 0, y: 15 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: i * 0.1, duration: 0.4 }}
-          className="flex items-center gap-2 sm:gap-3"
-        >
-          <div className="flex flex-col items-center bg-white border-2 border-slate-100 rounded-xl p-3 min-w-[80px] sm:min-w-[100px] hover:border-indigo-300 hover:shadow-md transition-all">
-            <span className="text-xl sm:text-2xl mb-1">{step.emoji}</span>
-            <span className="text-[10px] sm:text-xs font-bold text-slate-800 text-center leading-tight">
-              {step.label}
-            </span>
-            <span className="text-[9px] sm:text-[10px] text-slate-400 text-center">
-              {step.sub}
-            </span>
-          </div>
-          {i < flowSteps.length - 1 && (
-            <span className="text-slate-300 text-sm">→</span>
-          )}
-        </motion.div>
-      ))}
-    </div>
-  );
-}
 
 /* ---------- Main Section ---------- */
 export default function JourneySection() {
