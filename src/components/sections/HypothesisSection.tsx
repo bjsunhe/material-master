@@ -18,11 +18,11 @@ export default function HypothesisSection() {
           <div className="bg-indigo-500/20 border border-indigo-400/30 rounded-2xl p-8 text-center">
             <p className="text-2xl mb-3">🤔</p>
             <p className="text-xl font-bold text-white">
-              Where could I find the{" "}
+             {" "}
               <span className="text-indigo-300 underline underline-offset-4 decoration-indigo-400/50 decoration-2">
                 Material Number List
-              </span>{" "}
-              to feed the AI as context?
+              </span> -{">"} AI
+               
             </p>
           </div>
         </Reveal>

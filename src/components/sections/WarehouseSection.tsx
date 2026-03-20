@@ -139,7 +139,7 @@ const narrative = [
     ring: false,
     text: (
       <p className="text-emerald-300 text-lg font-medium">
-        I immediately realized: this was a goldmine. 🏆
+        This was a goldmine. 🏆
       </p>
     ),
   },
@@ -154,12 +154,12 @@ const pipeline = [
   },
   {
     emoji: "🗄️",
-    title: "System queries SAP",
+    title: "SAP BTP queries SAP R3",
     desc: "Use the PO number to retrieve the exact list of material numbers from SAP tables.",
   },
   {
     emoji: "🧠",
-    title: "AI find Chemical ID with context",
+    title: "AI use Material Number List as context",
     desc: "With the material number list as context, AI only needs to match each one to its CAS ID.",
   },
 ];

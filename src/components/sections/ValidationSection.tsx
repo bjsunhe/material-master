@@ -106,9 +106,7 @@ export default function ValidationSection() {
                   The Realization
                 </h4>
                 <p className="text-slate-600 mt-2 leading-relaxed">
-          SAP isn't just a data source — it's a 
-                 
-                  <strong>validation layer.</strong>
+          SAP isn't just a data source — it's a <strong>validation layer.</strong>
                 </p>
                 {/* <p className="text-slate-500 mt-3 leading-relaxed text-sm">
                   If the AI reads{" "}
