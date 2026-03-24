@@ -27,10 +27,10 @@ export const STAGES = [
     accuracy: 85,
     step1: 90,
     step2: 95,
-    title: "Barcode + SAP Context",
+    title: "SAP Context",
     subtitle: "Warehouse discovery → PO number → material list",
     insight:
-      "Discovered barcode labels in warehouse. PO number → SAP query → material list as AI context.",
+      "Discovered labels in warehouse. PO number → SAP query → material list as AI context.",
     color: "#f59e0b",
     bg: "#fffbeb",
   },

@@ -129,7 +129,7 @@ const narrative = [
     text: (
       <p className="text-slate-200 leading-relaxed font-medium">
         I saw our warehouse colleague attach a {" "}
-        <strong className="text-indigo-300">barcode label</strong> on {" "}
+        <strong className="text-indigo-300">label</strong> on {" "}
         <strong className="text-indigo-300">delivery note</strong>.
       </p>
     ),
@@ -149,7 +149,7 @@ const narrative = [
 const pipeline = [
   {
     emoji: "🏷️",
-    title: "AI reads the barcode label",
+    title: "AI reads the label",
     desc: "Extract the PO number from the clearly positioned label in the upper-left corner.",
   },
   {
